@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  width:100%;
+  height:auto;
+  background:#dcdcdc;
+  font-size:2px;
+  font-family: 'microsoft yahei';
+}
+// .emr-edit-leftMenu{
+//   overflow-y: auto;
+// }
+.emra-oak{
+  width:100%;
+  height:100%;
+
+  .edui-editor-toolbarbox{
+    display:none;
+  }
+}
+// .extra-info-wrapper{
+//   border-width: 1px;
+//   border-left-style: solid;
+// }
+.emr-edit-wrapper{
+  height:100%;
+  
+}
+  
+.extra-info{
+  height:100%;
+  overflow-y: scroll;
+}
+
+.emr-edit{
+  width:100%;
+  height:100vh;
+
+  .edui-editor-toolbarbox{
+    display:none;
+  }
+}
+.ueditor-oak{
+  width:100%;
+  height:max-content;
+  position:relative;
+}
+.ueditor-toobar-oak{
+  width:100%;
+  margin:0 auto;
+  background:#f1f1f1;
+  position:relative;
+  top:0;
+
+  .edui-button-oak{
+    display: inline-block;
+    padding:2px 8px;
+    margin-right:8px;
+    border:1px solid #cccccc;
+    &:hover,&.active{
+      background-color: #fff5d4;
+      border: 1px solid #dcac6c;
+    }
+  }
+}
+.tab-list{
+  width:100%;
+}
+.tab-list-item{
+  display:inline-block;
+  padding:3px 15px;
+  margin-top:2px;
+  margin-left: 4px;
+  margin-right:4px;
+  //border:1px solid #f3f3f3;
+  border-bottom:none;
+  cursor: pointer;
+  &:hover{
+    background: #ffffff;
+  }
+}
+.tab-list-item.theme{
+  background:#0f88eb;
+  color:#fff;
+  padding:4px 15px;
+  font-size:13px;
+  font-weight:600;
+  border:none;
+  margin:0;
+  cursor:default;
+}
+.tab-list-item.tab-list-item-active{
+  background:#fff;
+}
+.tab-content{
+  width:100%;
+}
+.tab-content-item{
+  width:calc(100% - 12px);
+  display: none;
+  padding:6px;
+  //min-height:50px;
+}
+.tab-content-item.tab-content-item-active{
+  display: block;
+  background:#fdfdfd;
+  border-bottom:1px solid #f3f3f3;
+}
+.ueditor-content-oak{
+  width:100%;
+  height:max-content;
+  position:absolute;
+  overflow: auto;
+}
+.ueditor-content{
+  margin : 0 auto;
+  margin-top : 10px;
+  padding: 0 25px;
+  border: 1px solid #d4d4d4;
+  background-color: white;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow:rgba(0, 0, 0, 0.2) 0 1px 6px, rgba(0, 0, 0, 0.2) 0 1px 4px;
+}
+
+.ueditor-script-oak{
+  margin:15px auto;
+  /*min-height:800px;*/
+}
+/*图标样式 空间库图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-controllibrary-1 .edui-icon{
+  background-size:75%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+}
+/*图标样式 多选图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-checkbox-1 .edui-icon{
+  background-size:80%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+}
+/*图标样式 单选图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-radio-1 .edui-icon{
+  width: 24px !important;
+  background-size:65%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+}
+/*图标样式 下拉框图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-select-1 .edui-icon{
+  width: 40px !important;
+  background-size:79%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+}
+/*图标样式 单行文本输入图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-input-1 .edui-icon{
+  width: 40px !important;
+  background-size:80% 82%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+}
+/*图标样式 多行文本输入图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-textarea-1 .edui-icon{
+  width: 40px !important;
+  background-size:80% 80%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+}
+/*图标样式 时间控件输入图标 */
+.edui-default .edui-toolbar .edui-button.edui-for-timeinput-1 .edui-icon {
+  width: 32px !important;
+  background-size: 80% 83%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* 图标样式 获取控件*/
+.edui-default .edui-toolbar .edui-button.edui-for-allwidgets-1 .edui-icon {
+  background-position: -401px -40px;
+}
+
+/* 图标样式 获取html*/
+.edui-default .edui-toolbar .edui-button.edui-for-allhtml-1 .edui-icon {
+  width: 18px !important;
+  height: 18px !important;
+  background-image:url('../../public/ueditor/imgs/allhtml.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+/* 图标样式，纸张方向横向 */
+.edui-default .edui-toolbar .edui-button.edui-for-orient .edui-icon{
+  width: 30px !important;
+  height: 20px !important;
+  background-image:url('../../public/ueditor/imgs/orient.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+
+/* 图标样式，纸张方向纵向 */
+.edui-default .edui-toolbar .edui-button.edui-for-portrait .edui-icon{
+  width: 20px !important;
+  height: 20px !important;
+  background-image:url('../../public/ueditor/imgs/portrait.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.edui-button-wrap:hover{
+  background-color: #ffe6d4;
+  border: 1px solid #dcac6c;
+  padding: 0 !important;
+}
+.edui-default .edui-bubble .edui-popup-content{
+  font-family:'microsoft yahei' !important;
+  font-size:12px !important;
+  padding:4px 12px !important;
+}
+
+/* 通用组件样式 */
+.panel{
+  color:#3c3c3c;
+  font-family: 'microsoft yahei';
+  border:1px solid #cccccc;
+  .panel-title{
+    font-size:12px;
+    text-align: center;
+  }
+  .panel-content{
+    padding: 8px;
+  }
+}
+
+
+.el-message-box__wrapper{
+	top: calc(50vh-175px);
+}
+.el-message-box{
+	width: 700px;
+
+	position: relative;
+	.el-message-box__header{
+		padding: 0;
+		.el-message-box__title{
+			height: 56px;
+			font-size: 16px;
+			font-family: PingFangSC-Medium, PingFang SC;
+			font-weight: 500;
+			color: #39475E;
+			line-height: 56px;
+			text-align: center;
+			background-color: #F4F8FF;
+		}
+	}
+	.el-message-box__content{
+		padding: 0;
+		.el-message-box__container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.el-icon-warning{
+				margin-top: 60px;
+				font-size: 70px!important;
+				color: #4F7BCA;
+			}
+			.el-message-box__message{
+				position: absolute;
+				top: 120px;
+				font-size: 20px;
+				font-family: PingFangSC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #333333;
+			}
+		}
+	}
+	.el-message-box__btns{
+		padding: 0;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		height: 80px;
+		line-height: 80px;
+		text-align: center;
+		background: #F4F8FF;
+		.el-button{
+			width: 120px;
+			height: 40px;
+			border-radius: 2px;
+			border: 1px solid #4F7BCA;
+			span{
+				font-size: 14px;
+				font-family: PingFangSC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #4F7BCA;
+			}
+		}
+		.el-button--primary{
+			margin-left: 66px;
+			background: #4F7BCA;
+			span{
+				color: #FFFFFF;
+			}
+		}
+	}
+}
+#components-layout-demo-fixed-sider .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
